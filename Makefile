@@ -1,12 +1,12 @@
 CC=gcc
-CFLAGS=-c -Wall
+CFLAGS= -Wall
 
 checkbinary:
-	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary.o
+	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary
 writebinary:
-	$(CC) $(CFLAGS) WriteBinary.c -o writebinary.o
+	$(CC) $(CFLAGS) WriteBinary.c -o writebinary
 all:
-	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary.o
-	$(CC) $(CFLAGS) WriteBinary.c -o writebinary.o
+	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary
+	$(CC) $(CFLAGS) WriteBinary.c -o writebinary
 clean:
 	rm -rf *.o
