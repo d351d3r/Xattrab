@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS= -Wall
+CFLAGS= -Wall -Wextra
 
 checkbinary:
 	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary
