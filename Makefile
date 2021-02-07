@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-c -Wall -Wextra
+CFLAGS=-Wall -Wextra -Wpedantic -Werror
 all:
 	$(CC) $(CFLAGS) CheckBinary.c -o checkbinary.o
 	$(CC) $(CFLAGS) WriteBinary.c -o writebinary.o
